@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<web-app>
+    <servlet>
+    <servlet-name>login</servlet-name>
+    <servlet-class>myservlet.control.HandleLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>login</servlet-name>
+   <url-pattern>/helpLogin</url-pattern>
+</servlet-mapping>
+
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>myservlet.control.HandleRegister</servlet-class>
+        
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/mzyRegister</url-pattern>
+        
+    </servlet-mapping>
+      <servlet>
+        <servlet-name>AddBook</servlet-name>
+        <servlet-class>myservlet.control.HandleAddBook</servlet-class>
+        
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddBook</servlet-name>
+        <url-pattern>/mzyAdd</url-pattern>
+        
+    </servlet-mapping>
+    </web-app>
